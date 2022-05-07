@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block title %}BMI Calculator{% endblock %}
+
+{% block content %}
+    <H1>BMI CALCULATOR</H1>
+
+    <div class="bmi-container">
+        <div class="calc">
+            <h1 class="wrapper-header">CSS Gauge<span class="heart"><3</span></h1>
+            <div class="wrapper">
+            <div class="gauge">
+                <div class="slice-colors">
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                </div>
+                <div class="needle"></div>
+                <div class="gauge-center"></div>
+            </div>
+            </div>
+          <div class="fields">
+            <div class="field">
+              <div class="label-wrapper">
+                <label for="height_input" class="label">Height (cm)</label>
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="number"
+                  id="height_input"
+                  name="height"
+                  required
+                  autofocus
+                  placeholder="Height"
+                  class="input"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <div class="label-wrapper">
+                <label for="weight_input" class="label">Weight (kg)</label>
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="number"
+                  id="weight_input"
+                  name="weight"
+                  required
+                  autofocus
+                  placeholder="Weight"
+                  class="input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="btn-wrapper">
+              <button class="button">
+                <span class="btn-text">Submit</span>
+              </button>
+            </div>
+            <div class="btn-wrapper">
+              <button class="button clear">
+                <span class="btn-text">Clear</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="scale_main">        
+    <h1 class="wrapper-header">CSS Gauge<span class="heart"><3</span></h1>
+    <div class="wrapper">
+    <div class="gauge">
+        <div class="slice-colors">
+        <div class="st slice-item"></div>
+        <div class="st slice-item"></div>
+        <div class="st slice-item"></div>
+        <div class="st slice-item"></div>
+        <div class="st slice-item"></div>
+        </div>
+        <div class="needle"></div>
+        <div class="gauge-center"></div>
+    </div>
+    </div>
+    <!-- <div class="measure-area">
+        
+        <div class="measurement" id="height">
+            <h4 class="measure">Height</h4><br>
+
+            <input class="input" type="text" id="height_input" name="height" placeholder="Inches" required></input>
+        </div>
+        <div class="measurement" id="weight">
+            <h4  class="measure">Weight</h4><br>
+            <input class="input" type="text" id="weight_input" name="weight" placeholder="Pounds" required></input>
+        </div>
+
+    </div>
+        <div>
+            <button id="calculate"
+                onclick="calculate(document.getElementById('height_input').value, document.getElementById('weight_input').value)">CALCULATE</button>
+            <button id="clear" onclick="clear_calculator()">CLEAR</button>
+        </div>-->
+
+    <div class="calc">
+        <div class="fields">
+            <div class="field">
+            <div class="label-wrapper">
+                <label for="height_input" class="label">Height (cm)</label>
+            </div>
+            <div class="home-height-input input-wrapper">
+                <input
+                type="number"
+                id="height_input"
+                name="height"
+                required
+                autofocus
+                placeholder="Height"
+                class="input"
+                />
+            </div>
+            </div>
+            <div class="field">
+            <div class="label-wrapper">
+                <label for="weight_input" class="label">Weight (kg)</label>
+            </div>
+            <div class="input-wrapper">
+                <input
+                type="number"
+                id="weight_input"
+                name="weight"
+                required
+                autofocus
+                placeholder="Weight"
+                class="home-textinput1 input"
+                />
+            </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="btn-wrapper">
+            <button class="button">
+                <span class="btn-text">Submit</span>
+            </button>
+            </div>
+            <div class="btn-wrapper">
+            <button class="button clear">
+                <span class="btn-text">Clear</span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}
